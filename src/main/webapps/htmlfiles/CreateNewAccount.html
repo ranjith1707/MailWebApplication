@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Create New Account</title>
+
+<style>
+#divmenu {
+	margin-top: 100px;
+	margin-left: 500px;
+	background-color: #ABB2B9;
+	height: 500px;
+	width: 400px;
+	padding-left: 20px;
+	padding-top: 20px;
+	border-radius: 10px;
+}
+
+#sub {
+	margin-left: 160px;
+	margin-top: 40px;
+	height: 35px;
+	width: 80px;
+	border-radius: 10px;
+}
+
+form {
+	margin-top: 40px;
+}
+
+h2 {
+	text-align: center;
+}
+</style>
+</head>
+<body>
+	<div id="divmenu">
+		<h2>Create New Account</h2>
+		<form action="../CreateAccount" method="post">
+			<table>
+				<tr>
+					<td>Enter your Name:</td>
+					<td><input type="text" name="Name" required></td>
+				</tr>
+				<tr>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+				</tr>
+				<tr>
+					<td>select Date Of Birth :</td>
+					<td><input type="date" name="DateOfBirth" required></td>
+				</tr>
+				<tr>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+				</tr>
+				<tr>
+				<tr>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Enetr Mobile Number :</td>
+					<td><input type="tel" id="phone" name="phone"
+						placeholder="9454279678" pattern="[6789][0-9]{9}" required></td>
+				</tr>
+				<tr>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Select Gender:</td>
+					<td>male: <input type="radio" name="gender" value="male">
+						female : <input type="radio" name="gender" value="female" required></td>
+				</tr>
+				<tr>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Create UserId:</td>
+					<td><input type="email" name="userId" required></td>
+				</tr>
+				<tr>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Create New Password</td>
+					<td><input type="password" name="password" required></td>
+				</tr>
+				<tr>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+				</tr>
+				<tr>
+					<td>ReEnter Password</td>
+					<td><input type="password" name="Repassword" required></td>
+				</tr>
+			</TABLE>
+			<input type="submit" name="Create" id="sub">
+
+		</form>
+	</div>
+</body>
+</html>
