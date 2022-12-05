@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+
+<style>
+#divmenu {
+	margin-top: 100px;
+	margin-left: 500px;
+	background-color: #AED6F1;
+	height: 500px;
+	width: 400px;
+	padding-left: 20px;
+	padding-top: 20px;
+	border-radius: 10px;
+}
+
+#sub {
+	margin-left: 150px;
+	margin-top: 40px;
+	height: 35px;
+	width: 80px;
+	border-radius: 10px;
+}
+
+form {
+	margin-top: 40px;
+}
+
+h2 {
+	text-align: center;
+}
+
+a {
+	margin-left: 99px;
+}
+
+display {
+	height: 35px;
+	margin-left: 70px;
+	text-align: center;
+	padding-top: 10px;
+}
+</style>
+</head>
+<body>
+	<div id="divmenu">
+		<h2>SignIn</h2>
+		<form action="LoginCheck" method="post">
+			<table>
+
+				<tr>
+					<td>Enter UserId:</td>
+					<td><input type="email" name="userId" required></td>
+				</tr>
+				<tr>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Enetr Password</td>
+					<td><input type="password" name="password" required></td>
+				</tr>
+				<tr>
+					<td></td>
+				</tr>
+
+			</TABLE>
+			<input type="submit" value="Login" id="sub">
+
+		</form>
+		<br> <br> &nbsp&nbsp&nbsp&nbsp&nbsp <a
+			href="htmlfiles/CreateNewAccount.html">Create New Account</a>
+
+		<h2 id="display"></h2>
+	</div>
+
+
+	<script>
+		const div = document.getElementById('display');
+		let cooke = document.cookie.split("=");
+		if (cooke[1] != null) {
+			div.textContent = 'Replacement text';
+			div.innerHTML = cooke[1];
+			console.log(cooke[1]);
+			console.log(cooke);
+			console.log(cooke[0]);
+		}
+	</script>
+
+</body>
+</html>
